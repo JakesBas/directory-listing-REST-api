@@ -1,0 +1,21 @@
+{
+  "name": "jobjack-ta",
+  "version": "1.0.0",
+  "description": "A web-app that, when given a directory, provides the directory listing.",
+  "main": "app.js",
+  "dependencies": {
+    "@angular/animations": "^7.2.4",
+    "@angular/cdk": "^7.3.1",
+    "@angular/material": "^7.3.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "stat-mode": "^0.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jaco Basson",
+  "license": "ISC"
+}

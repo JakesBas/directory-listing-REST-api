@@ -1,0 +1,33 @@
+<mat-list role="list">
+  <h3 mat-subheader>Directory</h3>
+
+  <mat-list-item role="listitem" *ngFor="let dir of listingDirectories">
+      <h4 mat-line *ngIf="dir != null"><strong>{{dir.path}}</strong></h4>
+      <mat-icon mat-list-icon *ngIf="dir != null && dir.file" >
+        note
+      </mat-icon>
+      <mat-icon mat-list-icon *ngIf="dir != null && dir.directory">
+        folder
+      </mat-icon>
+      <p mat-line *ngIf="dir != null"><strong>size:</strong> {{dir.size}} </p>
+      <p mat-line *ngIf="dir != null"><strong>-attributes-</strong></p>
+      <p mat-line *ngIf="dir != null">
+        <strong>owner: </strong>
+        <strong>read:</strong> {{dir.attributes.owner.read}}
+        <strong>write:</strong> {{dir.attributes.owner.write}}
+        <strong>execute:</strong> {{dir.attributes.owner.execute}}
+      </p>
+      <p mat-line *ngIf="dir != null">
+        <strong>group: </strong>
+        <strong>read:</strong> {{dir.attributes.group.read}}
+        <strong>write:</strong> {{dir.attributes.group.write}}
+        <strong>execute:</strong> {{dir.attributes.group.execute}}
+      </p>
+      <p mat-line *ngIf="dir != null">
+        <strong>individual: </strong>
+        <strong>read:</strong> {{dir.attributes.group.read}}
+        <strong>write:</strong> {{dir.attributes.group.write}}
+        <strong>execute:</strong> {{dir.attributes.group.execute}}
+      </p>
+  </mat-list-item>
+</mat-list>

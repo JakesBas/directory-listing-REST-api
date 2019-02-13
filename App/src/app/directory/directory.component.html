@@ -1,0 +1,13 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter a Directory"
+           [formControl]="name"
+           value="">
+  </mat-form-field>
+
+</form>
+
+<div class="example-button-row">
+  <button (click)="getDirectory()" mat-raised-button color="primary">Get Directory</button>
+</div>
+
