@@ -9,15 +9,18 @@ respected size and attributes.
 The api can be run by downloading the repo to a destination file. The following command lines should be performed to
 host the api locally.
 
-First navigate to the directory where the repo was downloaded in a command line interface.
+ First navigate to the directory where the repo was downloaded in a command line interface.
 
 Type in the following command:
--> node app.js
 
-The api will start hosting on localhost:8000.
+``` node app.js ```
+
+The api will start hosting on [localhost:8000](http://localhost:8000).
 
 Run a docker image with:
--> docker run --rm -p 4200:80 jacobasson/directory_listing:angular_directory_listing_app
+``` docker run --rm -p 4200:80 jacobasson/directory_listing:angular_directory_listing_app ```
 
-Navigate to localhost:4200 using a browser of your choice to test the web app functionality.
-The repository for the angular web app can be found at https://github.com/JakesBas/directory-listing-web-app.
+Navigate to [localhost:4200](http://localhost:4500) using a browser of your choice to test the web app functionality.
+The repository for the angular web app can be found [here](https://github.com/JakesBas/directory-listing-web-app).
+
+
