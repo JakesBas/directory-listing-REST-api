@@ -3,18 +3,19 @@ A Node.js REST api that uses an express framework to fetch data from a local fil
 
 
 This repository is intended to be used in conjunction with the repository listed as 'directory-listing-web-app'.
-It serves as a REST api that fetches information on a given directory and lists the files and folders with their
+The repository for the angular web app can be found [here](https://github.com/JakesBas/directory-listing-web-app).
+
+This repo serves as a REST api that fetches information on a given directory and lists the files and folders with their
 respected size and attributes.
 
 
 # Using this repo
 
-The api can be run by downloading the repo to a destination file. The following command lines should be performed to
-host the api locally.
+The api can be run by downloading the repo to a destination file on your local filesystem.
 
 
 ## Hosting the api locally
- First navigate to the directory where the repo was downloaded in a command line interface.
+ Using a command line interface, navigate to the directory where the repo was downloaded.
 
 Type in the following command:
 
@@ -28,7 +29,7 @@ Run a docker image with:
 
 ``` docker run --rm -p 4200:80 jacobasson/directory_listing:angular_directory_listing_app ```
 
-Navigate to [localhost:4200](http://localhost:4500) using a browser of your choice to test the web app functionality.
-The repository for the angular web app can be found [here](https://github.com/JakesBas/directory-listing-web-app).
+Navigate to [localhost:4200](http://localhost:4200) using a browser of your choice to test the web app functionality.
+
 
 
