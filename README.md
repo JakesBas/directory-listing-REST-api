@@ -6,9 +6,14 @@ This repository is intended to be used in conjunction with the repository listed
 It serves as a REST api that fetches information on a given directory and lists the files and folders with their
 respected size and attributes.
 
+
+# Using this repo
+
 The api can be run by downloading the repo to a destination file. The following command lines should be performed to
 host the api locally.
 
+
+## Hosting the api locally
  First navigate to the directory where the repo was downloaded in a command line interface.
 
 Type in the following command:
@@ -17,7 +22,10 @@ Type in the following command:
 
 The api will start hosting on [localhost:8000](http://localhost:8000).
 
+## Run the Angular web app (running the docker image)
+
 Run a docker image with:
+
 ``` docker run --rm -p 4200:80 jacobasson/directory_listing:angular_directory_listing_app ```
 
 Navigate to [localhost:4200](http://localhost:4500) using a browser of your choice to test the web app functionality.
